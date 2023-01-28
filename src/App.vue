@@ -1,11 +1,13 @@
 <script>
-import HomePage from "./components/HomePage.vue";
+import Todos from "./components/Todos.vue";
+// import HomePage from "./components/HomePage.vue";
 // import RiversJson from "./components/RiversJson.vue";
 // import Main from "./components/Main.vue";
 export default {
   name: "App",
   components: {
-    HomePage,
+    Todos,
+    // HomePage,
     // Main,
     // RiversJson,
   },
@@ -13,7 +15,8 @@ export default {
 </script>
 
 <template>
-  <HomePage />
+  <Todos />
+  <!-- <HomePage /> -->
   <!-- <Main /> -->
   <!-- <RiversJson /> -->
 </template>

@@ -49,7 +49,7 @@ export default {
         <button @click="Removeinfo">clear</button>
       </form>
       <li v-for="name in fullname" :key="name">
-        <p>{{ name.name }}</p>
+        <p>{{ (name.name, name.email) }}</p>
       </li>
     </div>
   </div>
