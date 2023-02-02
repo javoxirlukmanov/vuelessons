@@ -27,13 +27,10 @@ export default {
         localStorage.setItem("userInfo", JSON.stringify(this.fullname));
       }
     },
-    DeleteTask() {
-      this.fullname.forEach((item, index) => {
-        if (item) {
-          this.fullname.splice(index, 1);
-          localStorage.removeItem("userInfo");
-        }
-      });
+    DeleteTask(item) {
+      let index = this.fullname.indexOf(item);
+      this.fullname.splice(index, 1);
+      localStorage.setItem("info", JSON.stringify(this.fullname));
     },
     UpdateTask(item) {
       this.currentindex = this.fullname.findIndex((x) => x.Task === item.Task);

@@ -31,20 +31,8 @@ export default {
   <div class="container">
     <div class="row" flex-wrap>
       <form action="#">
-        <input
-          v-model="form.name"
-          type="text"
-          placeholder="name"
-          ref="inputValue"
-          required
-        />
-        <input
-          v-model="form.email"
-          type="text"
-          placeholder="email"
-          ref="inputValue"
-          required
-        />
+        <input v-model="form.name" type="text" placeholder="name" required />
+        <input v-model="form.email" type="text" placeholder="email" required />
         <button @click="Getinfo">submit</button>
         <button @click="Removeinfo">clear</button>
       </form>
