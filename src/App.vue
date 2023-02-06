@@ -1,12 +1,16 @@
 <script>
-import Todos from "./components/Todos.vue";
+// import Todos from "./components/Todos.vue";
 // import HomePage from "./components/HomePage.vue";
 // import RiversJson from "./components/RiversJson.vue";
 // import Main from "./components/Main.vue";
+import Section from "./components/Section.vue";
+import Sidebar from "./components/Sidebar.vue";
 export default {
   name: "App",
   components: {
-    Todos,
+    Section,
+    Sidebar,
+    // Todos,
     // HomePage,
     // Main,
     // RiversJson,
@@ -15,7 +19,8 @@ export default {
 </script>
 
 <template>
-  <Todos />
+  <Section />
+  <Sidebar />
   <!-- <HomePage /> -->
   <!-- <Main /> -->
   <!-- <RiversJson /> -->
